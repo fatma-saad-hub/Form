@@ -1,0 +1,60 @@
+<html>
+
+<head>
+  <title> form-survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1 id="title" class="text-center">Fill this Form</h1>
+    <p id="description" class="text-center">
+      Thank you for taking the time to help us improve the platform </p>
+  </header>
+  <main class="bordered">
+    <form id="survey-form">
+      <label id="name-label" for="name">Name
+        <input type="text" name="name" id="name" placeholder="Enter your name" required class="full-width padded margin-down"></label>
+      <label id="email-label" for="email">Email
+        <input type="email" name="email" id="email" placeholder="Enter your Email" required class="full-width padded margin-down"></label>
+      <label id="number-label" for="number">Age
+        <input type="number" name="age" id="number" min="15" max="100" placeholder="Age" class="full-width padded margin-down"></label>
+
+      <label id="label-dropdown" for="dropdown"> Which option best describes your current role?
+        <select id="dropdown" required class="margin-down">
+          <option disabled="" selected="" value="">Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select></label>
+      
+      <fieldset id="recomend-full" class="margin-down">
+        <legend>Would you recommend freeCodeCamp to a friend?</legend>
+        <label id="radio-def-label" for="radio-def"><input id="radio-def" name="recommend" value="definitely" type="radio" class="input-radio" checked>Definitely</label>
+        <label id="radio-may-label" for="radio-may">
+          <input id="radio-may" name="recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
+
+        <label id="radio-sure-label" for="radio-sure"><input id="radio-sure" name="recommend" value="not-sure" type="radio">Not sure</label>
+        </fieldset>
+      
+        <fieldset id="gender" class="margin-down">
+          <legend> Frameworks<span><em>(Check all that apply)</em><span>
+          </legend>
+          <label id="react-checkbox-label" for="react-checkbox"><input id="react-checkbox" name="framework" value="react" type="checkbox">React</label>
+          <label id="angular-checkbox-label" for="angular-checkbox"><input id="angular-checkbox" name="framework" value="angular" type="checkbox">Angular</label>
+          <label id="vue-checkbox-label" for="vue-checkbox"><input id="vue-checkbox" name="framework" value="vue" type="checkbox">Vue</label>
+          <label id="svelte-checkbox-label" for="svelte-checkbox"><input id="svelte-checkbox" name="framework" value="react" type="checkbox">Svelte</label>
+        </fieldset>
+        <textarea id="comments" rows="4" cols="50" placeholder="Enter your comment here..." class="full-width padded margin-down"></textarea>
+
+        <button type="submit" id="submit" class="full-width padded margin-down bordered"> Submit</button>
+    </form>
+  </main>
+
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
